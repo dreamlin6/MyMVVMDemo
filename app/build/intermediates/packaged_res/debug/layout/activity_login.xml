@@ -86,7 +86,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/logout"
                 android:layout_marginLeft="@dimen/layout_marginLeft"
-                android:tag="binding_4"                                      />
+                android:tag="binding_4"                    
+                                                                             />
         </LinearLayout>
     </LinearLayout>
 

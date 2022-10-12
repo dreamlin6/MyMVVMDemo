@@ -5,7 +5,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.view.View;
 @SuppressWarnings("unchecked")
-public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
+public class ActivityLoginBindingImpl extends ActivityLoginBinding implements com.example.mvvmdemo.generated.callback.OnClickListener.Listener {
 
     @Nullable
     private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
@@ -23,6 +23,8 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
     @NonNull
     private final android.widget.LinearLayout mboundView0;
     // variables
+    @Nullable
+    private final android.view.View.OnClickListener mCallback2;
     // values
     // listeners
     // Inverse Binding Event Handlers
@@ -49,6 +51,7 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
         this.tv1.setTag(null);
         setRootTag(root);
         // listeners
+        mCallback2 = new com.example.mvvmdemo.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -253,6 +256,11 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
 
             this.login.setEnabled(androidxDatabindingViewDataBindingSafeUnboxLoginvmMLoginInputStatusGetValue);
         }
+        if ((dirtyFlags & 0x20L) != 0) {
+            // api target 1
+
+            this.logout.setOnClickListener(mCallback2);
+        }
         if ((dirtyFlags & 0x32L) != 0) {
             // api target 1
 
@@ -272,6 +280,22 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
     }
     // Listener Stub Implementations
     // callback impls
+    public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
+        // localize variables for thread safety
+        // loginvm != null
+        boolean loginvmJavaLangObjectNull = false;
+        // loginvm
+        com.example.mvvmdemo.viewmodel.LoginViewmodel loginvm = mLoginvm;
+
+
+
+        loginvmJavaLangObjectNull = (loginvm) != (null);
+        if (loginvmJavaLangObjectNull) {
+
+
+            loginvm.logout();
+        }
+    }
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping

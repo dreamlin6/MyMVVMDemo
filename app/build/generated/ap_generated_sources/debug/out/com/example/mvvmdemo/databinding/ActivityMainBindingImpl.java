@@ -83,11 +83,11 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
         switch (localFieldId) {
             case 0 :
-                return onChangeSetvmMHomeBtnEnableStatus((androidx.lifecycle.MutableLiveData<java.lang.Boolean>) object, fieldId);
+                return onChangeSetvmMBtnEnableStatus((androidx.lifecycle.MutableLiveData<java.lang.Boolean>) object, fieldId);
         }
         return false;
     }
-    private boolean onChangeSetvmMHomeBtnEnableStatus(androidx.lifecycle.MutableLiveData<java.lang.Boolean> SetvmMHomeBtnEnableStatus, int fieldId) {
+    private boolean onChangeSetvmMBtnEnableStatus(androidx.lifecycle.MutableLiveData<java.lang.Boolean> SetvmMBtnEnableStatus, int fieldId) {
         if (fieldId == BR._all) {
             synchronized(this) {
                     mDirtyFlags |= 0x1L;
@@ -104,36 +104,36 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
-        java.lang.Boolean setvmMHomeBtnEnableStatusGetValue = null;
-        androidx.lifecycle.MutableLiveData<java.lang.Boolean> setvmMHomeBtnEnableStatus = null;
         com.example.mvvmdemo.viewmodel.SetViewmodel setvm = mSetvm;
-        boolean androidxDatabindingViewDataBindingSafeUnboxSetvmMHomeBtnEnableStatusGetValue = false;
+        java.lang.Boolean setvmMBtnEnableStatusGetValue = null;
+        boolean androidxDatabindingViewDataBindingSafeUnboxSetvmMBtnEnableStatusGetValue = false;
+        androidx.lifecycle.MutableLiveData<java.lang.Boolean> setvmMBtnEnableStatus = null;
 
         if ((dirtyFlags & 0x7L) != 0) {
 
 
 
                 if (setvm != null) {
-                    // read setvm.mHomeBtnEnableStatus
-                    setvmMHomeBtnEnableStatus = setvm.mHomeBtnEnableStatus;
+                    // read setvm.mBtnEnableStatus
+                    setvmMBtnEnableStatus = setvm.mBtnEnableStatus;
                 }
-                updateLiveDataRegistration(0, setvmMHomeBtnEnableStatus);
+                updateLiveDataRegistration(0, setvmMBtnEnableStatus);
 
 
-                if (setvmMHomeBtnEnableStatus != null) {
-                    // read setvm.mHomeBtnEnableStatus.getValue()
-                    setvmMHomeBtnEnableStatusGetValue = setvmMHomeBtnEnableStatus.getValue();
+                if (setvmMBtnEnableStatus != null) {
+                    // read setvm.mBtnEnableStatus.getValue()
+                    setvmMBtnEnableStatusGetValue = setvmMBtnEnableStatus.getValue();
                 }
 
 
-                // read androidx.databinding.ViewDataBinding.safeUnbox(setvm.mHomeBtnEnableStatus.getValue())
-                androidxDatabindingViewDataBindingSafeUnboxSetvmMHomeBtnEnableStatusGetValue = androidx.databinding.ViewDataBinding.safeUnbox(setvmMHomeBtnEnableStatusGetValue);
+                // read androidx.databinding.ViewDataBinding.safeUnbox(setvm.mBtnEnableStatus.getValue())
+                androidxDatabindingViewDataBindingSafeUnboxSetvmMBtnEnableStatusGetValue = androidx.databinding.ViewDataBinding.safeUnbox(setvmMBtnEnableStatusGetValue);
         }
         // batch finished
         if ((dirtyFlags & 0x7L) != 0) {
             // api target 1
 
-            this.login1.setEnabled(androidxDatabindingViewDataBindingSafeUnboxSetvmMHomeBtnEnableStatusGetValue);
+            this.login1.setEnabled(androidxDatabindingViewDataBindingSafeUnboxSetvmMBtnEnableStatusGetValue);
         }
     }
     // Listener Stub Implementations
@@ -141,7 +141,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): setvm.mHomeBtnEnableStatus
+        flag 0 (0x1L): setvm.mBtnEnableStatus
         flag 1 (0x2L): setvm
         flag 2 (0x3L): null
     flag mapping end*/

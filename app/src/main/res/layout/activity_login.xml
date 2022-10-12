@@ -86,6 +86,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/logout"
                 android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:onClick="@{() -> loginvm.logout()}"
                 android:enabled="@{loginvm.mLoginStatus == 1 ? true : false}"/>
         </LinearLayout>
     </LinearLayout>

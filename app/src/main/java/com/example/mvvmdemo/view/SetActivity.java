@@ -108,10 +108,6 @@ public class SetActivity extends AppCompatActivity implements View.OnClickListen
                 Intent intent2 = new Intent(SetActivity.this, MainActivity.class);
                 startActivity(intent2);
                 break;
-            case R.id.reset:
-                Log.i("TESTLOG","SetActivity reset onClick");
-                setViewmodel.reset();
-                break;
         }
     }
 

@@ -61,13 +61,6 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent2);
             }
         });
-        loginBinding.logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.i("TESTLOG","LoginActivity logout onClick");
-                loginViewmodel.logout();
-            }
-        });
 
         ViewModelProvider.AndroidViewModelFactory instance =
                 ViewModelProvider.AndroidViewModelFactory

@@ -100,7 +100,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/reset"
                 android:layout_marginLeft="@dimen/layout_marginLeft"
-                android:tag="binding_5"                    />
+                android:tag="binding_5"                 
+                                                           />
         </LinearLayout>
     </LinearLayout>
          

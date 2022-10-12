@@ -100,6 +100,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/reset"
                 android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:onClick="@{() -> setvm.reset()}"
                 android:enabled="@{setvm.mBtnEnableStatus}"/>
         </LinearLayout>
     </LinearLayout>
