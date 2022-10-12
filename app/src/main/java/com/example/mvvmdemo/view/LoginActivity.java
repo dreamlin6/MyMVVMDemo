@@ -86,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
 
         @Override
         public void afterTextChanged(Editable s) {
-            loginViewmodel.setmLoginInputStatus(s.length() > 0); //监听输入框文本变化
+            loginViewmodel.setmLoginInputStatus(loginBinding.et1.getText().length() > 0 && loginBinding.et2.getText().length() > 0); //监听输入框文本变化
         }
     };
 

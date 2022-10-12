@@ -38,7 +38,6 @@ public class SetActivity extends AppCompatActivity implements View.OnClickListen
         setBinding.user.addTextChangedListener(watcher1);
         setBinding.pass.addTextChangedListener(watcher1);
         setBinding.username.addTextChangedListener(watcher2);
-        setBinding.password.addTextChangedListener(watcher2);
         setBinding.set.setOnClickListener(this);
         setBinding.tologin.setOnClickListener(this);
         setBinding.settohome.setOnClickListener(this);
@@ -59,7 +58,7 @@ public class SetActivity extends AppCompatActivity implements View.OnClickListen
         @Override
         public void afterTextChanged(Editable s) {
             Log.i("TESTLOG","SetActivity afterTextChanged watcher1");
-            setViewmodel.setSet(s.length() > 0); //监听输入框文本变化
+            setViewmodel.setSet(setBinding.user.getText().length() > 0 && setBinding.pass.getText().length() > 0); //监听输入框文本变化
         }
     };
 
@@ -75,7 +74,7 @@ public class SetActivity extends AppCompatActivity implements View.OnClickListen
         @Override
         public void afterTextChanged(Editable s) {
             Log.i("TESTLOG","SetActivity afterTextChanged watcher2");
-            setViewmodel.setToLoginBtnEnableStatus(s.length() > 0);//监听文本框文本变化
+            setViewmodel.setToLoginBtnEnableStatus(setBinding.username.getText().length() > 0 && setBinding.password.getText().length() > 0);//监听文本框文本变化
         }
     };
 
