@@ -158,7 +158,6 @@ dimen textSize24
 dimen textSize30
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-id currentUser
 id et1
 id et2
 id login

@@ -5,7 +5,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.view.View;
 @SuppressWarnings("unchecked")
-public class ActivitySetBindingImpl extends ActivitySetBinding implements com.example.mvvmdemo.generated.callback.OnClickListener.Listener {
+public class ActivitySetBindingImpl extends ActivitySetBinding  {
 
     @Nullable
     private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
@@ -24,8 +24,6 @@ public class ActivitySetBindingImpl extends ActivitySetBinding implements com.ex
     @NonNull
     private final android.widget.LinearLayout mboundView0;
     // variables
-    @Nullable
-    private final android.view.View.OnClickListener mCallback1;
     // values
     // listeners
     // Inverse Binding Event Handlers
@@ -55,7 +53,6 @@ public class ActivitySetBindingImpl extends ActivitySetBinding implements com.ex
         this.username.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback1 = new com.example.mvvmdemo.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -242,17 +239,11 @@ public class ActivitySetBindingImpl extends ActivitySetBinding implements com.ex
 
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.password, setvmMPassGetValue);
         }
-        if ((dirtyFlags & 0x20L) != 0) {
-            // api target 1
-
-            this.reset.setOnClickListener(mCallback1);
-        }
         if ((dirtyFlags & 0x38L) != 0) {
             // api target 1
 
             this.reset.setEnabled(androidxDatabindingViewDataBindingSafeUnboxSetvmMBtnEnableStatusGetValue);
             this.tologin.setEnabled(androidxDatabindingViewDataBindingSafeUnboxSetvmMBtnEnableStatusGetValue);
-            com.example.mvvmdemo.adapter.SetBindingAdapter.setBtnVisible(this.tologin, androidxDatabindingViewDataBindingSafeUnboxSetvmMBtnEnableStatusGetValue);
         }
         if ((dirtyFlags & 0x31L) != 0) {
             // api target 1
@@ -267,22 +258,6 @@ public class ActivitySetBindingImpl extends ActivitySetBinding implements com.ex
     }
     // Listener Stub Implementations
     // callback impls
-    public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
-        // localize variables for thread safety
-        // setvm != null
-        boolean setvmJavaLangObjectNull = false;
-        // setvm
-        com.example.mvvmdemo.viewmodel.SetViewmodel setvm = mSetvm;
-
-
-
-        setvmJavaLangObjectNull = (setvm) != (null);
-        if (setvmJavaLangObjectNull) {
-
-
-            setvm.reset();
-        }
-    }
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping

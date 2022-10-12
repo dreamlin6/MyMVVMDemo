@@ -12,10 +12,6 @@
         "source": "C:\\Users\\SWL\\.gradle\\daemon\\7.3.3\\com.example.mvvmdemo.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.mvvmdemo.app-merged_res-5:/layout_activity_login.xml.flat",
-        "source": "com.example.mvvmdemo.app-main-7:/layout/activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\SWL\\.gradle\\daemon\\7.3.3\\com.example.mvvmdemo.app-merged_res-5:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\SWL\\.gradle\\daemon\\7.3.3\\com.example.mvvmdemo.app-main-7:\\drawable\\ic_launcher_background.xml"
     },
@@ -50,6 +46,10 @@
     {
         "merged": "C:\\Users\\SWL\\.gradle\\daemon\\7.3.3\\com.example.mvvmdemo.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\SWL\\.gradle\\daemon\\7.3.3\\com.example.mvvmdemo.app-main-7:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.mvvmdemo.app-merged_res-5:/layout_activity_main.xml.flat",
+        "source": "com.example.mvvmdemo.app-main-7:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\SWL\\.gradle\\daemon\\7.3.3\\com.example.mvvmdemo.app-merged_res-5:\\drawable-v24_ic_launcher_foreground.xml.flat",

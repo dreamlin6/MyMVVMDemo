@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+
+        <import type="com.example.mvvmdemo.constant.MConstant" />
+
+        <variable
+            name="setvm"
+            type="com.example.mvvmdemo.viewmodel.SetViewmodel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user"
+                android:textSize="@dimen/textSize24" />
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{setvm.mUser}"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:textSize="@dimen/textSize24"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pass"
+                android:textSize="@dimen/textSize24"/>
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{setvm.mPass}"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:textSize="@dimen/textSize24"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_tips"
+            android:layout_marginTop="@dimen/layout_marginTop"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/pass_tips"
+            android:layout_marginTop="@dimen/layout_marginTop"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/set"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/set"
+            android:layout_marginTop="30dp"
+            android:enabled="@{setvm.setBtnEnableStatus}" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/layout_marginTop">
+            <Button
+                android:id="@+id/tologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toLogin"
+                android:enabled="@{setvm.mBtnEnableStatus}"/>
+            <Button
+                android:id="@+id/settohome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toHome"
+                android:layout_marginLeft="@dimen/layout_marginLeft" />
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:enabled="@{setvm.mBtnEnableStatus}"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

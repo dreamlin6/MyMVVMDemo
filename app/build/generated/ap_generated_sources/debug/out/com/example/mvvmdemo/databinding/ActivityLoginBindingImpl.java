@@ -5,7 +5,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.view.View;
 @SuppressWarnings("unchecked")
-public class ActivityLoginBindingImpl extends ActivityLoginBinding implements com.example.mvvmdemo.generated.callback.OnClickListener.Listener {
+public class ActivityLoginBindingImpl extends ActivityLoginBinding  {
 
     @Nullable
     private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
@@ -14,46 +14,41 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.currentUser, 5);
-        sViewsWithIds.put(R.id.et1, 6);
-        sViewsWithIds.put(R.id.et2, 7);
-        sViewsWithIds.put(R.id.toset, 8);
-        sViewsWithIds.put(R.id.logintohome, 9);
+        sViewsWithIds.put(R.id.et1, 5);
+        sViewsWithIds.put(R.id.et2, 6);
+        sViewsWithIds.put(R.id.toset, 7);
+        sViewsWithIds.put(R.id.logintohome, 8);
     }
     // views
     @NonNull
-    private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
+    private final android.widget.LinearLayout mboundView0;
     // variables
-    @Nullable
-    private final android.view.View.OnClickListener mCallback2;
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public ActivityLoginBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
     }
     private ActivityLoginBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 4
-            , (android.widget.TextView) bindings[5]
+            , (android.widget.EditText) bindings[5]
             , (android.widget.EditText) bindings[6]
-            , (android.widget.EditText) bindings[7]
             , (android.widget.Button) bindings[3]
-            , (android.widget.Button) bindings[9]
+            , (android.widget.Button) bindings[8]
             , (android.widget.Button) bindings[4]
             , (android.widget.TextView) bindings[2]
-            , (android.widget.Button) bindings[8]
+            , (android.widget.Button) bindings[7]
             , (android.widget.TextView) bindings[1]
             );
         this.login.setTag(null);
         this.logout.setTag(null);
         this.mUsers.setTag(null);
-        this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);
         this.tv1.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback2 = new com.example.mvvmdemo.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -258,11 +253,6 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
 
             this.login.setEnabled(androidxDatabindingViewDataBindingSafeUnboxLoginvmMLoginInputStatusGetValue);
         }
-        if ((dirtyFlags & 0x20L) != 0) {
-            // api target 1
-
-            this.logout.setOnClickListener(mCallback2);
-        }
         if ((dirtyFlags & 0x32L) != 0) {
             // api target 1
 
@@ -282,22 +272,6 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
     }
     // Listener Stub Implementations
     // callback impls
-    public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
-        // localize variables for thread safety
-        // loginvm != null
-        boolean loginvmJavaLangObjectNull = false;
-        // loginvm
-        com.example.mvvmdemo.viewmodel.LoginViewmodel loginvm = mLoginvm;
-
-
-
-        loginvmJavaLangObjectNull = (loginvm) != (null);
-        if (loginvmJavaLangObjectNull) {
-
-
-            loginvm.logout();
-        }
-    }
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping

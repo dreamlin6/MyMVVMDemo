@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MVVMDemo</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="login">LOGIN</string>
+    <string name="set">SET</string>
+    <string name="user">username:</string>
+    <string name="pass">password:</string>
+    <string name="theUser">CURRENT USER:</string>
+    <string name="toSet">ToSet</string>
+    <string name="toLogin">ToLogin</string>
+    <string name="toHome">ToHome</string>
+    <string name="reset">Reset</string>
+    <string name="logout">Logout</string>
+    <string name="user_tips">Please input username</string>
+    <string name="pass_tips">Please input password</string>
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+
+        <import type="com.example.mvvmdemo.constant.MConstant" />
+
+        <variable
+            name="loginvm"
+            type="com.example.mvvmdemo.viewmodel.LoginViewmodel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{loginvm.mText}"
+            android:textSize="@dimen/textSize30"
+            android:textColor="@color/black"
+            app:loginStatus="@{loginvm.mLoginStatus}"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/theUser"
+                android:textSize="@dimen/textSize30"/>
+            <TextView
+                android:id="@+id/mUsers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:textSize="@dimen/textSize30"
+                android:text="@{loginvm.mUsers}"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_tips"
+            android:layout_marginTop="@dimen/layout_marginTop" />
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/pass_tips"
+            android:layout_marginTop="@dimen/layout_marginTop" />
+        <Button
+            android:id="@+id/login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:enabled="@{loginvm.mLoginInputStatus}"
+            android:text="@string/login"
+            android:layout_marginTop="30dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/layout_marginTop">
+            <Button
+                android:id="@+id/toset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toSet" />
+            <Button
+                android:id="@+id/logintohome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toHome"
+                android:layout_marginLeft="@dimen/layout_marginLeft" />
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:layout_marginLeft="@dimen/layout_marginLeft"
+                android:enabled="@{loginvm.mLoginStatus == 1 ? true : false}"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

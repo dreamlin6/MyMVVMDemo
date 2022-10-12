@@ -19,9 +19,6 @@ import java.lang.Object;
 
 public abstract class ActivityLoginBinding extends ViewDataBinding {
   @NonNull
-  public final TextView currentUser;
-
-  @NonNull
   public final EditText et1;
 
   @NonNull
@@ -49,10 +46,9 @@ public abstract class ActivityLoginBinding extends ViewDataBinding {
   protected LoginViewmodel mLoginvm;
 
   protected ActivityLoginBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView currentUser, EditText et1, EditText et2, Button login, Button logintohome,
-      Button logout, TextView mUsers, Button toset, TextView tv1) {
+      EditText et1, EditText et2, Button login, Button logintohome, Button logout, TextView mUsers,
+      Button toset, TextView tv1) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.currentUser = currentUser;
     this.et1 = et1;
     this.et2 = et2;
     this.login = login;
