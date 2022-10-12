@@ -1,0 +1,75 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mvvmdemo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:6:5-36:19
+12        android:allowBackup="true"
+12-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:7:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.5.0] C:\Users\SWL\.gradle\caches\transforms-3\4cb2d3ae910a25e4d3b75b6b0d8d1b11\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+14        android:dataExtractionRules="@xml/data_extraction_rules"
+14-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:8:9-65
+15        android:debuggable="true"
+16        android:extractNativeLibs="false"
+17        android:fullBackupContent="@xml/backup_rules"
+17-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:9:9-54
+18        android:icon="@mipmap/ic_launcher"
+18-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:10:9-43
+19        android:label="@string/login"
+19-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:11:9-38
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:12:9-54
+21        android:supportsRtl="true"
+21-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:13:9-35
+22        android:testOnly="true"
+23        android:theme="@style/Theme.MVVMDemo" >
+23-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:14:9-46
+24        <activity
+24-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:16:9-25:20
+25            android:name="com.example.mvvmdemo.view.MainActivity"
+25-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:17:13-46
+26            android:exported="true"
+26-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:19:13-36
+27            android:launchMode="singleTask" >
+27-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:18:13-44
+28            <intent-filter>
+28-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:20:13-24:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:21:17-69
+29-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:21:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:23:17-77
+31-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:23:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity
+34-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:26:9-30:20
+35            android:name="com.example.mvvmdemo.view.LoginActivity"
+35-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:27:13-47
+36            android:exported="true"
+36-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:29:13-36
+37            android:launchMode="singleTask" >
+37-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:28:13-44
+38        </activity>
+39        <activity
+39-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:31:9-35:20
+40            android:name="com.example.mvvmdemo.view.SetActivity"
+40-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:32:13-45
+41            android:exported="true"
+41-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:34:13-36
+42            android:launchMode="singleInstance" >
+42-->C:\HHcode\MyTest\MVVMDemo\app\src\main\AndroidManifest.xml:33:13-48
+43        </activity>
+44    </application>
+45
+46</manifest>
